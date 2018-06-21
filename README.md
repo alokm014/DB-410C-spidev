@@ -7,7 +7,6 @@ Communication between DB-410C as a master with ARDUINO Mega as a slave device
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python get-pip.py
 pip install spidev
-sudo apt-get install libmraa-dev
 ```
 
 ## Enabling SPI on Dragonboard 410c with SPIDEV
