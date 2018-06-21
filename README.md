@@ -23,6 +23,24 @@ make
 sudo scripts/db410c/enable-spidev.sh
 sudo reboot now
 ```
+## Wiring
+
+| DB410C        | ARDUINO MEGA |
+|---------------|--------------|
+| CLK(8)        | SCK          |
+| MISO(10)      | MISO         |  
+| CS(12)        | SS           |
+| MOSI(14)      | MOSI         |
+
+### NOTE: Use 8-bit Bidirectional Voltage-Level Translator
+[Datasheet](https://cdn-shop.adafruit.com/datasheets/txb0108.pdf)
+
+## Download & Run Code
+```
+git clone https://github.com/alokm014/DB-410C-spidev.git
+cd DB-410C-spidev
+sudo python spidev.py
+```
 
 ## Project Details
 
@@ -33,15 +51,11 @@ sudo reboot now
 - **Board(s) used:** DragonBoard 410c
 - **Difficulty level:** Beginner
 
-## Videos
-
-< Link to YouTube video >
-
 ## Resources
 
 ### RSS URL
-
-< Provide URL to any source instructions/code >
+- [GitHUb Repository](https://github.com/alokm014/DB-410C-spidev)
+- [Enable SPI](https://www.96boards.org/documentation/consumer/dragonboard410c/guides/enable-spi.md.html)
 
 ### Social Media Link
 
